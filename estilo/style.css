@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+:root {
+
+    --fonte01: 'Creepster', cursive;
+    --fonte02: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte03: 'Monoton', cursive;
+    --fonte04: 'Lumanosimo', cursive;
+}
+
+body {
+    min-height: 100vh;
+    background-color: black;
+    
+    
+}
+
+
+header {
+    font-family: var(--fonte01);
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(0, 0, 65));
+    padding: 10px;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 15vw;
+    color: white;
+    text-shadow: 3px 3px 3px  black;
+}
+
+main {
+    
+    max-width: 1000px;
+    margin: auto;
+    
+}
+
+main p {
+    font-family: var(--fonte02);
+    text-align: justify;
+    line-height: 3em;
+    padding: 5px;
+    padding-right: 20px;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    
+    background-color: white
+}
+
+section.normal1 {
+    border-radius: 0px 0px 5px 5px;
+    background-color: white;
+}
+
+section.normal2 {
+    border-radius: 5px 5px 0px 0px;
+    background-color: white;
+}
+
+section.imagem {
+    background-color: black;
+    color: white;
+    box-shadow: inset 2.5px 2.5px 10px 0px rgba(0, 0, 0, 0.699);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    border-radius: 10px;
+    width: 300px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.322);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url(../imagens/img01.jpg);
+    background-position: center center;
+}
+
+section#img02 {
+    background-image: url(../imagens/img02.jpg);
+    background-position: center center;
+}
+
+footer {
+    color: white;
+    padding: 3.5px;
+    text-align: center;
+}
+
+footer  a {
+    text-decoration: none;
+    color: darkgray;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: antiquewhite;
+}
+
+p.legenda {
+    font-family: var(--fonte02);
+    text-align: justify;
+    line-height: 2em;
+    padding: 3px;
+    padding-right: 10px;
+}
